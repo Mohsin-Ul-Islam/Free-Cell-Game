@@ -26,6 +26,7 @@ class Deck
 
     inline bool isFull() {return this->_length == this->_size};
     inline bool isEmpty() {return this->_length == 0};
+    void init(const int& l_size);
 
 };
 
