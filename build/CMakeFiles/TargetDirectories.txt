@@ -1,0 +1,3 @@
+/root/Projects/Free-Cell-Game/build/CMakeFiles/rebuild_cache.dir
+/root/Projects/Free-Cell-Game/build/CMakeFiles/binary.dir
+/root/Projects/Free-Cell-Game/build/CMakeFiles/edit_cache.dir

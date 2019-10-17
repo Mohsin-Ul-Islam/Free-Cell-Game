@@ -1,4 +1,4 @@
-#include "Board.h"
+#include "FCG/Board.h"
 
 Board::Board()
 {
@@ -20,23 +20,23 @@ void Board::init(const Deck& l_deck)
 
 }
 
-bool Game::moveTF(const int& l_srcTableau, const int& l_cardIndex,const int&  l_destFreeCell)
+bool Board::moveTF(const int& l_srcTableau, const int& l_cardIndex,const int&  l_destFreeCell)
 {
   return true;
 }
-bool Game::moveTT(const int& l_srcTableau, const int& l_cardIndex,const int&  l_destTableau)
+bool Board::moveTT(const int& l_srcTableau, const int& l_cardIndex,const int&  l_destTableau)
 {
   return true;
 }
-bool Game::moveFT(const int& l_srcFreeCell, const int& l_cardIndex,const int& l_destTableau)
+bool Board::moveFT(const int& l_srcFreeCell, const int& l_cardIndex,const int& l_destTableau)
 {
   return true;
 }
-bool Game::moveTH(const int& l_srcTableau, const int& l_cardIndex,const int&  l_destHomeCell)
+bool Board::moveTH(const int& l_srcTableau, const int& l_cardIndex,const int&  l_destHomeCell)
 {
   return true;
 }
-bool Game::moveFH(const int& l_srcFreeCell, const int& l_cardIndex,const int& l_destHomeCell)
+bool Board::moveFH(const int& l_srcFreeCell, const int& l_cardIndex,const int& l_destHomeCell)
 {
   return true;
 }

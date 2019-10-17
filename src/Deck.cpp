@@ -1,4 +1,4 @@
-#include "Deck.h"
+#include "FCG/Deck.h"
 
 Deck::Deck()
 {
@@ -28,7 +28,7 @@ Deck::~Deck()
 void Deck::init(const int& l_size)
 {
   this->_size = l_size;
-  this->length = 0;
+  this->_length = 0;
   if(!this->_size) return;
   _deck = new Card[this->_size];
 }

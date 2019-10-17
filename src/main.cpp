@@ -1,5 +1,5 @@
 #include <iostream>
-#include "Game.h"
+#include "FCG/Game.h"
 
 using namespace std;
 

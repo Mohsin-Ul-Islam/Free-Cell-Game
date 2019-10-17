@@ -1,4 +1,4 @@
-#include "Card.h"
+#include "FCG/Card.h"
 
 Card::Card(const int& l_rank, const char& l_suit)
 {
@@ -12,13 +12,18 @@ Card::Card()
 
 Card::Card(const Card& l_card)
 {
-  this._rank = l_card.rank();
-  this._suit = l_card.suit();
+  this->init(l_card.rank(),l_card.suit());
 }
 
 Card::~Card()
 {
 
+}
+
+void Card::init(const int& l_rank, char const& l_suit)
+{
+  this->_rank = l_rank;
+  this->_suit = l_suit;
 }
 
 int Card::rank() const
@@ -33,5 +38,5 @@ char Card::suit() const
 
 void Card::show() const
 {
-  
+
 }
