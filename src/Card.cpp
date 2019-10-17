@@ -38,5 +38,6 @@ char Card::suit() const
 
 void Card::show() const
 {
-
+  std::cout<<this->_suit<<this->_rank<<std::endl;
+  console.log("logged");
 }

@@ -5,23 +5,28 @@ CMakeFiles/binary.dir/src/Board.cpp.o
  .././include/FCG/Board.h
  .././include/FCG/Card.h
  .././include/FCG/Deck.h
+ .././libs/Console/include/Console/Console.h
  /root/Projects/Free-Cell-Game/src/Board.cpp
 CMakeFiles/binary.dir/src/Card.cpp.o
  .././include/FCG/Card.h
+ .././libs/Console/include/Console/Console.h
  /root/Projects/Free-Cell-Game/src/Card.cpp
 CMakeFiles/binary.dir/src/Deck.cpp.o
  .././include/FCG/Card.h
  .././include/FCG/Deck.h
+ .././libs/Console/include/Console/Console.h
  /root/Projects/Free-Cell-Game/src/Deck.cpp
 CMakeFiles/binary.dir/src/Game.cpp.o
  .././include/FCG/Board.h
  .././include/FCG/Card.h
  .././include/FCG/Deck.h
  .././include/FCG/Game.h
+ .././libs/Console/include/Console/Console.h
  /root/Projects/Free-Cell-Game/src/Game.cpp
 CMakeFiles/binary.dir/src/main.cpp.o
  .././include/FCG/Board.h
  .././include/FCG/Card.h
  .././include/FCG/Deck.h
  .././include/FCG/Game.h
+ .././libs/Console/include/Console/Console.h
  /root/Projects/Free-Cell-Game/src/main.cpp

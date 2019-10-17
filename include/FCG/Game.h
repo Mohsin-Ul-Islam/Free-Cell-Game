@@ -1,3 +1,5 @@
+#include <iostream>
+#include <fstream>
 #include "Board.h"
 
 #ifndef GAME_H

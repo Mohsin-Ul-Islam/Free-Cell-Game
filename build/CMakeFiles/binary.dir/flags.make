@@ -6,5 +6,5 @@ CXX_FLAGS =
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/root/Projects/Free-Cell-Game/./include -I/root/Projects/Free-Cell-Game/./src 
+CXX_INCLUDES = -I/root/Projects/Free-Cell-Game/./include -I/root/Projects/Free-Cell-Game/./src -I/root/Projects/Free-Cell-Game/./libs/Console/src -I/root/Projects/Free-Cell-Game/./libs/Console/include 
 

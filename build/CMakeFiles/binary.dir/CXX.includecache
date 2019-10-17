@@ -6,39 +6,23 @@
 
 #IncludeRegexTransform: 
 
-.././include/FCG/Board.h
-Deck.h
-.././include/FCG/Deck.h
-
 .././include/FCG/Card.h
+iostream
+-
+Console/Console.h
+.././include/FCG/Console/Console.h
 
 .././include/FCG/Deck.h
 Card.h
 .././include/FCG/Card.h
 
-.././include/FCG/Game.h
-Board.h
-.././include/FCG/Board.h
-
-/root/Projects/Free-Cell-Game/src/Board.cpp
-FCG/Board.h
-/root/Projects/Free-Cell-Game/src/FCG/Board.h
-
-/root/Projects/Free-Cell-Game/src/Card.cpp
-FCG/Card.h
-/root/Projects/Free-Cell-Game/src/FCG/Card.h
+.././libs/Console/include/Console/Console.h
+iostream
+-
+string
+-
 
 /root/Projects/Free-Cell-Game/src/Deck.cpp
 FCG/Deck.h
 /root/Projects/Free-Cell-Game/src/FCG/Deck.h
-
-/root/Projects/Free-Cell-Game/src/Game.cpp
-FCG/Game.h
-/root/Projects/Free-Cell-Game/src/FCG/Game.h
-
-/root/Projects/Free-Cell-Game/src/main.cpp
-iostream
--
-FCG/Game.h
-/root/Projects/Free-Cell-Game/src/FCG/Game.h
 

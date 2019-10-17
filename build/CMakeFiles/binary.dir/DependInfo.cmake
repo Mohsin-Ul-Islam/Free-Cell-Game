@@ -16,10 +16,13 @@ set(CMAKE_CXX_COMPILER_ID "GNU")
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
   ".././include"
   ".././src"
+  ".././libs/Console/src"
+  ".././libs/Console/include"
   )
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
+  "/root/Projects/Free-Cell-Game/build/libs/Console/CMakeFiles/console.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

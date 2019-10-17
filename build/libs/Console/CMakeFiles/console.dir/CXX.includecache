@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+.././libs/Console/include/Console/Console.h
+iostream
+-
+string
+-
+
+/root/Projects/Free-Cell-Game/libs/Console/src/Console.cpp
+Console/Console.h
+/root/Projects/Free-Cell-Game/libs/Console/src/Console/Console.h
+

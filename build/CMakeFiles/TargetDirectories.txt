@@ -1,3 +1,6 @@
 /root/Projects/Free-Cell-Game/build/CMakeFiles/rebuild_cache.dir
 /root/Projects/Free-Cell-Game/build/CMakeFiles/binary.dir
 /root/Projects/Free-Cell-Game/build/CMakeFiles/edit_cache.dir
+/root/Projects/Free-Cell-Game/build/libs/Console/CMakeFiles/rebuild_cache.dir
+/root/Projects/Free-Cell-Game/build/libs/Console/CMakeFiles/console.dir
+/root/Projects/Free-Cell-Game/build/libs/Console/CMakeFiles/edit_cache.dir

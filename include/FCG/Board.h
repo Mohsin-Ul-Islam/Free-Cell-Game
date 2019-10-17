@@ -11,6 +11,7 @@ class Board
     Board(const Deck& l_deck);
     Board();
     ~Board();
+    void init(const Deck& l_deck);
     bool moveTT(const int& l_srcTableau, const int& l_cardIndex,const int&  l_destTableau);
     bool moveTF(const int& l_srcTableau, const int& l_cardIndex,const int&  l_destFreeCell);
     bool moveFT(const int& l_srcFreeCell, const int& l_cardIndex,const int& l_destTableau);
@@ -22,9 +23,6 @@ class Board
     Deck* _tableaus;
     Deck* _freeCells;
     Deck* _homeCells;
-
-    void init(const Deck& l_deck);
-
 
 };
 

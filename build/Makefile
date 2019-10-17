@@ -123,6 +123,19 @@ binary/fast:
 	$(MAKE) -f CMakeFiles/binary.dir/build.make CMakeFiles/binary.dir/build
 .PHONY : binary/fast
 
+#=============================================================================
+# Target rules for targets named console
+
+# Build rule for target.
+console: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 console
+.PHONY : console
+
+# fast build rule for target.
+console/fast:
+	$(MAKE) -f libs/Console/CMakeFiles/console.dir/build.make libs/Console/CMakeFiles/console.dir/build
+.PHONY : console/fast
+
 src/Board.o: src/Board.cpp.o
 
 .PHONY : src/Board.o
@@ -267,6 +280,7 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... binary"
 	@echo "... edit_cache"
+	@echo "... console"
 	@echo "... src/Board.o"
 	@echo "... src/Board.i"
 	@echo "... src/Board.s"

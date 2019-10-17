@@ -139,6 +139,7 @@ binary: CMakeFiles/binary.dir/src/Deck.cpp.o
 binary: CMakeFiles/binary.dir/src/Board.cpp.o
 binary: CMakeFiles/binary.dir/src/Card.cpp.o
 binary: CMakeFiles/binary.dir/build.make
+binary: libs/Console/libconsole.a
 binary: CMakeFiles/binary.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/root/Projects/Free-Cell-Game/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable binary"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/binary.dir/link.txt --verbose=$(VERBOSE)

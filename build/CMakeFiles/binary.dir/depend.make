@@ -4,24 +4,29 @@
 CMakeFiles/binary.dir/src/Board.cpp.o: .././include/FCG/Board.h
 CMakeFiles/binary.dir/src/Board.cpp.o: .././include/FCG/Card.h
 CMakeFiles/binary.dir/src/Board.cpp.o: .././include/FCG/Deck.h
+CMakeFiles/binary.dir/src/Board.cpp.o: .././libs/Console/include/Console/Console.h
 CMakeFiles/binary.dir/src/Board.cpp.o: ../src/Board.cpp
 
 CMakeFiles/binary.dir/src/Card.cpp.o: .././include/FCG/Card.h
+CMakeFiles/binary.dir/src/Card.cpp.o: .././libs/Console/include/Console/Console.h
 CMakeFiles/binary.dir/src/Card.cpp.o: ../src/Card.cpp
 
 CMakeFiles/binary.dir/src/Deck.cpp.o: .././include/FCG/Card.h
 CMakeFiles/binary.dir/src/Deck.cpp.o: .././include/FCG/Deck.h
+CMakeFiles/binary.dir/src/Deck.cpp.o: .././libs/Console/include/Console/Console.h
 CMakeFiles/binary.dir/src/Deck.cpp.o: ../src/Deck.cpp
 
 CMakeFiles/binary.dir/src/Game.cpp.o: .././include/FCG/Board.h
 CMakeFiles/binary.dir/src/Game.cpp.o: .././include/FCG/Card.h
 CMakeFiles/binary.dir/src/Game.cpp.o: .././include/FCG/Deck.h
 CMakeFiles/binary.dir/src/Game.cpp.o: .././include/FCG/Game.h
+CMakeFiles/binary.dir/src/Game.cpp.o: .././libs/Console/include/Console/Console.h
 CMakeFiles/binary.dir/src/Game.cpp.o: ../src/Game.cpp
 
 CMakeFiles/binary.dir/src/main.cpp.o: .././include/FCG/Board.h
 CMakeFiles/binary.dir/src/main.cpp.o: .././include/FCG/Card.h
 CMakeFiles/binary.dir/src/main.cpp.o: .././include/FCG/Deck.h
 CMakeFiles/binary.dir/src/main.cpp.o: .././include/FCG/Game.h
+CMakeFiles/binary.dir/src/main.cpp.o: .././libs/Console/include/Console/Console.h
 CMakeFiles/binary.dir/src/main.cpp.o: ../src/main.cpp
 

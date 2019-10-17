@@ -30,7 +30,16 @@ void Deck::init(const int& l_size)
   this->_size = l_size;
   this->_length = 0;
   if(!this->_size) return;
-  _deck = new Card[this->_size];
+  this->_deck = new Card[this->_size];
+}
+
+void Deck::display() const
+{
+  for(int i = 0; i<this->_length; i++)
+  {
+    this->_deck[i].show();
+  }
+  return;
 }
 
 void Deck::pushCard(const Card& l_card)
@@ -39,6 +48,10 @@ void Deck::pushCard(const Card& l_card)
   {
     this->_deck[this->_length] = l_card;
     this->_length++;
+  }
+  else
+  {
+    console.warn("Deck full! cannot push card.");
   }
 
   return;
@@ -51,6 +64,10 @@ Card Deck::popCard()
     this->_length--;
     return this->_deck[this->_length];
   }
+  else
+  {
+    console.warn("Deck empty! cannot pop out any card.");
+  }
 
-  return Card(0,'0');
+  return Card(-1,'0');
 }

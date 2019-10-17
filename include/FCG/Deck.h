@@ -11,6 +11,7 @@ class Deck
     Deck(const int& l_size);
     Deck(const Deck& l_deck);
     void pushCard(const Card& l_card);
+    void display() const;
     Card popCard();
     inline Card at(const int& l_index) const {return l_index >=0 && l_index < this->_size ? this->_deck[l_index] : Card(0,'0');};
     inline int Size() const {return this->_size;};
