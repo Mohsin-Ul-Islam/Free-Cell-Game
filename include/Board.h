@@ -1,16 +1,16 @@
 #include "Deck.h"
 
-#ifndef TABLE_H
-#define TABLE_H
+#ifndef BOARD_H
+#define BOARD_H
 
-class Table
+class Board
 {
 
   public:
 
-    Table(const Deck& l_deck);
-    Table();
-    ~Table();
+    Board(const Deck& l_deck);
+    Board();
+    ~Board();
     bool moveTT(const int& l_srcTableau, const int& l_cardIndex,const int&  l_destTableau);
     bool moveTF(const int& l_srcTableau, const int& l_cardIndex,const int&  l_destFreeCell);
     bool moveFT(const int& l_srcFreeCell, const int& l_cardIndex,const int& l_destTableau);

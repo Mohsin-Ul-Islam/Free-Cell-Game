@@ -22,7 +22,7 @@ Deck::Deck(const Deck& l_deck)
 
 Deck::~Deck()
 {
-  delete this->_deck;
+  delete[] this->_deck;
 }
 
 void Deck::init(const int& l_size)

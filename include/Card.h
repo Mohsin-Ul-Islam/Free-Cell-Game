@@ -8,7 +8,7 @@ class Card
     Card(const int& l_rank, const char& l_suit);
     Card(const Card& l_card);
     Card();
-    char rank() const;
+    int rank() const;
     char suit() const;
     void show() const;
     ~Card();
