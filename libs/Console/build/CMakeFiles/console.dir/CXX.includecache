@@ -6,3 +6,15 @@
 
 #IncludeRegexTransform: 
 
+.././include/Console/Console.h
+iostream
+-
+string
+-
+stdlib.h
+-
+
+/root/Projects/Console/src/Console.cpp
+Console/Console.h
+/root/Projects/Console/src/Console/Console.h
+

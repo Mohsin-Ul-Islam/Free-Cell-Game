@@ -12,6 +12,7 @@ class Board
     Board();
     ~Board();
     void init(const Deck& l_deck);
+    void display();
     bool moveTT(const int& l_srcTableau, const int& l_cardIndex,const int&  l_destTableau);
     bool moveTF(const int& l_srcTableau, const int& l_cardIndex,const int&  l_destFreeCell);
     bool moveFT(const int& l_srcFreeCell, const int& l_cardIndex,const int& l_destTableau);

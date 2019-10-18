@@ -2,7 +2,8 @@
 
 Deck::Deck()
 {
-  this->init(1);
+  console.log("Deck created.");
+  this->init(14);
 }
 
 Deck::Deck(const int& l_size)
@@ -69,5 +70,5 @@ Card Deck::popCard()
     console.warn("Deck empty! cannot pop out any card.");
   }
 
-  return Card(-1,'0');
+  return Card(-1,'0','N');
 }

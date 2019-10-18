@@ -13,6 +13,7 @@ class Game
     ~Game();
     void init();
     void load();
+    void save();
     void turn();
     inline bool isEnd() const {return _isEnd;};
 

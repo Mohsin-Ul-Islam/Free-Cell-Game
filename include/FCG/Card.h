@@ -8,11 +8,12 @@ class Card
 {
   public:
 
-    Card(const int& l_rank, const char& l_suit);
+    Card(const int& l_rank, const char& l_suit, const char& l_color);
     Card(const Card& l_card);
     Card();
-    int rank() const;
-    char suit() const;
+    inline int  rank()  const {return this->_rank;};
+    inline char suit()  const {return this->_suit;};
+    inline char color() const {return this->_color;};
     void show() const;
     ~Card();
 
@@ -20,8 +21,9 @@ class Card
 
     int   _rank;
     char  _suit;
+    char _color;
 
-    void init(const int& l_rank, const char& l_suit);
+    void init(const int& l_rank, const char& l_suit, const char& l_color);
 
 };
 

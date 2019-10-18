@@ -6,6 +6,10 @@
 
 #IncludeRegexTransform: 
 
+.././include/FCG/Board.h
+Deck.h
+.././include/FCG/Deck.h
+
 .././include/FCG/Card.h
 iostream
 -
@@ -16,13 +20,27 @@ Console/Console.h
 Card.h
 .././include/FCG/Card.h
 
+.././include/FCG/Game.h
+iostream
+-
+fstream
+-
+Board.h
+.././include/FCG/Board.h
+
 .././libs/Console/include/Console/Console.h
 iostream
 -
 string
 -
+stdlib.h
+-
 
-/root/Projects/Free-Cell-Game/src/Deck.cpp
-FCG/Deck.h
-/root/Projects/Free-Cell-Game/src/FCG/Deck.h
+/root/Projects/Free-Cell-Game/src/Board.cpp
+FCG/Board.h
+/root/Projects/Free-Cell-Game/src/FCG/Board.h
+
+/root/Projects/Free-Cell-Game/src/Game.cpp
+FCG/Game.h
+/root/Projects/Free-Cell-Game/src/FCG/Game.h
 
