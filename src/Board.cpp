@@ -56,74 +56,105 @@ void Board::init(const Deck& l_deck)
   }
 }
 
-bool Board::moveTF(const int& l_srcTableau, const int& l_cardIndex,const int&  l_destFreeCell)
+bool Board::validateMove(Deck& srcDeck, Deck& destDeck,const int& l_length)
 {
-
-  if(this->_tableaus[l_srcTableau].length() == 0)
+  if(l_length <= 0)
   {
+    console.warn("Can't move invalid number of cards.");
     return false;
   }
 
-  if(this->_freeCells[l_destFreeCell].length() > 0)
+  if(srcDeck.length() <= 0)
   {
-    Card destCard = this->_freeCells[l_destFreeCell].popCard();
-    this->_freeCells[l_destFreeCell].pushCard(destCard);
-    Card srcCard  = this->_tableaus[l_srcTableau].at(this->_tableaus[l_srcTableau].length() - 1 - l_cardIndex);
+    console.warn("Source Deck is empty. Can't move a card.");
+    return false;
+  }
+
+  if(destDeck.length() > 0)
+  {
+    Card destCard = destDeck.popCard();
+    destDeck.pushCard(destCard);
+    Card srcCard  = srcDeck.at(srcDeck.length() - 1 - l_length);
 
     if(destCard.color() == srcCard.color())
     {
+      console.warn("Source and Destination cards of same color. Can't move a card");
       return false;
     }
 
     if(destCard.rank() <= srcCard.rank())
     {
+      console.warn("Source card rank is higher than destination card. Can't move a card");
+      return false;
+    }
+
+    if(destCard.rank() - srcCard.rank() > 1)
+    {
+      console.warn("Destination card rank is greater than 1 rank from source card. Can't move a card.");
       return false;
     }
   }
+
+  return true;
+}
+
+void Board::moveTF(const int& l_srcTableau, const int& l_cardIndex,const int&  l_destFreeCell)
+{
+  if(!this->validateMove(this->_tableaus[l_srcTableau],this->_freeCells[l_destFreeCell],l_cardIndex)) return;
 
   for(int i = 0; i<l_cardIndex; i++)
   {
     this->_freeCells[l_destFreeCell].pushCard(this->_tableaus[l_srcTableau].popCard());
   }
 
-  return true;
+  console.log("Move successfull.");
+  return;
 }
-bool Board::moveTT(const int& l_srcTableau, const int& l_cardIndex,const int&  l_destTableau)
+void Board::moveTT(const int& l_srcTableau, const int& l_cardIndex,const int&  l_destTableau)
 {
+
+  if(!this->validateMove(this->_tableaus[l_srcTableau],this->_tableaus[l_destTableau],l_cardIndex)) return;
 
   for(int i = 0; i<l_cardIndex; i++)
   {
     this->_tableaus[l_destTableau].pushCard(this->_tableaus[l_srcTableau].popCard());
   }
 
-  return true;
+  console.log("Move successfull.");
+  return;
 }
-bool Board::moveFT(const int& l_srcFreeCell, const int& l_cardIndex,const int& l_destTableau)
+void Board::moveFT(const int& l_srcFreeCell, const int& l_cardIndex,const int& l_destTableau)
 {
+  if(!this->validateMove(this->_freeCells[l_srcFreeCell],this->_tableaus[l_destTableau],l_cardIndex)) return;
+
   for(int i = 0; i<l_cardIndex; i++)
   {
     this->_tableaus[l_destTableau].pushCard(this->_freeCells[l_srcFreeCell].popCard());
   }
 
-  return true;
+  return;
 }
-bool Board::moveTH(const int& l_srcTableau, const int& l_cardIndex,const int&  l_destHomeCell)
+void Board::moveTH(const int& l_srcTableau, const int& l_cardIndex,const int&  l_destHomeCell)
 {
+  if(!this->validateMove(this->_tableaus[l_srcTableau],this->_homeCells[l_destHomeCell],l_cardIndex)) return;
+
   for(int i = 0; i<l_cardIndex; i++)
   {
     this->_homeCells[l_destHomeCell].pushCard(this->_tableaus[l_srcTableau].popCard());
   }
 
-  return true;
+  return;
 }
-bool Board::moveFH(const int& l_srcFreeCell, const int& l_cardIndex,const int& l_destHomeCell)
+void Board::moveFH(const int& l_srcFreeCell, const int& l_cardIndex,const int& l_destHomeCell)
 {
+  if(!this->validateMove(this->_freeCells[l_srcFreeCell],this->_homeCells[l_destHomeCell],l_cardIndex)) return;
+
   for(int i = 0; i<l_cardIndex; i++)
   {
     this->_homeCells[l_destHomeCell].pushCard(this->_freeCells[l_srcFreeCell].popCard());
   }
 
-  return true;
+  return;
 }
 
 void Board::display()

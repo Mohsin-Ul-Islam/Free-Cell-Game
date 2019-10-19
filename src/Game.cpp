@@ -102,7 +102,7 @@ void Game::save()
 
 void Game::turn()
 {
-  console.clear();
+  //console.clear();
 
   this->_board->display();
 
@@ -118,13 +118,17 @@ void Game::turn()
   int dest;
   int len;
 
-  bool moved = false;
-
   do
   {
     std::cin>>choice;
 
   }while(choice < 1 || choice > 6);
+
+  if(choice == 6)
+  {
+    this->_isEnd = true;
+    return;
+  }
 
   console.log("Enter source number.");
   std::cin>>source;
@@ -138,28 +142,23 @@ void Game::turn()
   switch (choice)
   {
     case 1:
-      moved = this->_board->moveTT(source - 1,len,dest - 1);
+      this->_board->moveTT(source - 1,len,dest - 1);
       break;
     case 2:
-      moved = this->_board->moveTF(source - 1,len,dest - 1);
+      this->_board->moveTF(source - 1,len,dest - 1);
       break;
     case 3:
-      moved = this->_board->moveFT(source - 1,len,dest - 1);
+      this->_board->moveFT(source - 1,len,dest - 1);
       break;
     case 4:
-      moved = this->_board->moveTH(source - 1,len,dest - 1);
+      this->_board->moveTH(source - 1,len,dest - 1);
       break;
     case 5:
-      moved = this->_board->moveFH(source - 1,len,dest - 1);
+      this->_board->moveFH(source - 1,len,dest - 1);
       break;
     case 6:
       this->_isEnd = true;
       break;
-  }
-
-  if(!moved)
-  {
-    console.warn("Invalid move.");
   }
 
   return;

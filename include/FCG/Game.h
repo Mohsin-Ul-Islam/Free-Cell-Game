@@ -15,7 +15,7 @@ class Game
     void load();
     void save();
     void turn();
-    inline bool isEnd() const {return _isEnd;};
+    inline bool isEnd() const {return this->_isEnd;};
 
   private:
 

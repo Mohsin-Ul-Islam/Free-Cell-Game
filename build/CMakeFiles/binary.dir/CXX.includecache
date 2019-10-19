@@ -40,7 +40,21 @@ stdlib.h
 FCG/Board.h
 /root/Projects/Free-Cell-Game/src/FCG/Board.h
 
+/root/Projects/Free-Cell-Game/src/Card.cpp
+FCG/Card.h
+/root/Projects/Free-Cell-Game/src/FCG/Card.h
+
+/root/Projects/Free-Cell-Game/src/Deck.cpp
+FCG/Deck.h
+/root/Projects/Free-Cell-Game/src/FCG/Deck.h
+
 /root/Projects/Free-Cell-Game/src/Game.cpp
+FCG/Game.h
+/root/Projects/Free-Cell-Game/src/FCG/Game.h
+
+/root/Projects/Free-Cell-Game/src/main.cpp
+iostream
+-
 FCG/Game.h
 /root/Projects/Free-Cell-Game/src/FCG/Game.h
 

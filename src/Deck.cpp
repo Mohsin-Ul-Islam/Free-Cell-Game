@@ -36,11 +36,24 @@ void Deck::init(const int& l_size)
 
 void Deck::display() const
 {
+  if(this->_length == 0)
+  {
+    console.log("-----");
+    console.log("|    |");
+    console.log("|    |");
+    console.log("-----");
+  }
+
   for(int i = 0; i<this->_length; i++)
   {
     this->_deck[i].show();
   }
   return;
+}
+
+void Deck::shuffle()
+{
+
 }
 
 void Deck::pushCard(const Card& l_card)
